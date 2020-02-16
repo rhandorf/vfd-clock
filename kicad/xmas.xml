@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>C:\Users\rhandorf\Documents\KiCAD\XMas\xmas.sch</source>
+    <date>11/25/2019 10:05:10 PM</date>
+    <tool>Eeschema (5.1.4)-1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>xmas.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="IC1">
+      <value>MIC2981_82YN</value>
+      <footprint>DIP773W53P254L2337H394Q18N</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/1/MIC2981_82YN.pdf</datasheet>
+      <fields>
+        <field name="Description">Micrel MIC2981/82YN, General Purpose Driver CMOS, PMOS, TTL, 350 mA, 5  50V 18-Pin, PDIP</field>
+        <field name="Height">3.937</field>
+        <field name="Manufacturer_Name">Microchip</field>
+        <field name="Manufacturer_Part_Number">MIC2981/82YN</field>
+        <field name="Mouser Part Number">998-MIC2981/82YN</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=998-MIC2981%2F82YN</field>
+      </fields>
+      <libsource lib="Samac" part="MIC2981_82YN" description="Micrel MIC2981/82YN, General Purpose Driver CMOS, PMOS, TTL, 350 mA, 5  50V 18-Pin, PDIP"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DDB84EE</tstamp>
+    </comp>
+    <comp ref="IC2">
+      <value>SN74HC595D</value>
+      <footprint>SOIC127P600X175-16N</footprint>
+      <datasheet>http://www.ti.com/lit/gpn/sn74hc595</datasheet>
+      <fields>
+        <field name="Description">8-BIT SHIFT REGISTERS WITH 3-STATE OUTPUT REGISTERS</field>
+        <field name="Height">1.75</field>
+        <field name="Manufacturer_Name">Texas Instruments</field>
+        <field name="Manufacturer_Part_Number">SN74HC595D</field>
+        <field name="Mouser Part Number">595-SN74HC595D</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=595-SN74HC595D</field>
+      </fields>
+      <libsource lib="Samac" part="SN74HC595D" description="8-BIT SHIFT REGISTERS WITH 3-STATE OUTPUT REGISTERS"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DDD98BF</tstamp>
+    </comp>
+    <comp ref="IC4">
+      <value>MIC2981_82YN</value>
+      <footprint>DIP773W53P254L2337H394Q18N</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/1/MIC2981_82YN.pdf</datasheet>
+      <fields>
+        <field name="Description">Micrel MIC2981/82YN, General Purpose Driver CMOS, PMOS, TTL, 350 mA, 5  50V 18-Pin, PDIP</field>
+        <field name="Height">3.937</field>
+        <field name="Manufacturer_Name">Microchip</field>
+        <field name="Manufacturer_Part_Number">MIC2981/82YN</field>
+        <field name="Mouser Part Number">998-MIC2981/82YN</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=998-MIC2981%2F82YN</field>
+      </fields>
+      <libsource lib="Samac" part="MIC2981_82YN" description="Micrel MIC2981/82YN, General Purpose Driver CMOS, PMOS, TTL, 350 mA, 5  50V 18-Pin, PDIP"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DE2299D</tstamp>
+    </comp>
+    <comp ref="VFD-russ2">
+      <value>IV-11-russ</value>
+      <footprint>XMas:IV-11-russ</footprint>
+      <libsource lib="VFD" part="IV-11-russ" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DE229D1</tstamp>
+    </comp>
+    <comp ref="IC3">
+      <value>SN74HC595D</value>
+      <footprint>SOIC127P600X175-16N</footprint>
+      <datasheet>http://www.ti.com/lit/gpn/sn74hc595</datasheet>
+      <fields>
+        <field name="Description">8-BIT SHIFT REGISTERS WITH 3-STATE OUTPUT REGISTERS</field>
+        <field name="Height">1.75</field>
+        <field name="Manufacturer_Name">Texas Instruments</field>
+        <field name="Manufacturer_Part_Number">SN74HC595D</field>
+        <field name="Mouser Part Number">595-SN74HC595D</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=595-SN74HC595D</field>
+      </fields>
+      <libsource lib="Samac" part="SN74HC595D" description="8-BIT SHIFT REGISTERS WITH 3-STATE OUTPUT REGISTERS"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DE229EC</tstamp>
+    </comp>
+    <comp ref="RN1">
+      <value>CAT16-111J4LF</value>
+      <footprint>CAPCAV80P155X320X60-8L</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/1/CAT16-111J4LF.pdf</datasheet>
+      <fields>
+        <field name="Description">Resistor Networks &amp; Arrays 110ohm 5% Concave 4resistors</field>
+        <field name="Height">0.6</field>
+        <field name="Manufacturer_Name">Bourns</field>
+        <field name="Manufacturer_Part_Number">CAT16-111J4LF</field>
+        <field name="Mouser Part Number">652-CAT16-111J4LF</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=652-CAT16-111J4LF</field>
+      </fields>
+      <libsource lib="Samac" part="CAT16-111J4LF" description="Resistor Networks &amp; Arrays 110ohm 5% Concave 4resistors"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DE5F1EA</tstamp>
+    </comp>
+    <comp ref="LED1">
+      <value>APTR3216ZGCK</value>
+      <footprint>LEDC3216X125N</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/1/APTR3216ZGCK.pdf</datasheet>
+      <fields>
+        <field name="Description">3.2x1.6 mm SMD Chip LED Lamp</field>
+        <field name="Height">1.25</field>
+        <field name="Manufacturer_Name">Kingbright</field>
+        <field name="Manufacturer_Part_Number">APTR3216ZGCK</field>
+        <field name="Mouser Part Number">604-APTR3216ZGCK</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=604-APTR3216ZGCK</field>
+      </fields>
+      <libsource lib="Samac" part="APTR3216ZGCK" description="3.2x1.6 mm SMD Chip LED Lamp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DE70152</tstamp>
+    </comp>
+    <comp ref="LED4">
+      <value>APTR3216ZGCK</value>
+      <footprint>LEDC3216X125N</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/1/APTR3216ZGCK.pdf</datasheet>
+      <fields>
+        <field name="Description">3.2x1.6 mm SMD Chip LED Lamp</field>
+        <field name="Height">1.25</field>
+        <field name="Manufacturer_Name">Kingbright</field>
+        <field name="Manufacturer_Part_Number">APTR3216ZGCK</field>
+        <field name="Mouser Part Number">604-APTR3216ZGCK</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=604-APTR3216ZGCK</field>
+      </fields>
+      <libsource lib="Samac" part="APTR3216ZGCK" description="3.2x1.6 mm SMD Chip LED Lamp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DE894AB</tstamp>
+    </comp>
+    <comp ref="LED7">
+      <value>APTR3216ZGCK</value>
+      <footprint>LEDC3216X125N</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/1/APTR3216ZGCK.pdf</datasheet>
+      <fields>
+        <field name="Description">3.2x1.6 mm SMD Chip LED Lamp</field>
+        <field name="Height">1.25</field>
+        <field name="Manufacturer_Name">Kingbright</field>
+        <field name="Manufacturer_Part_Number">APTR3216ZGCK</field>
+        <field name="Mouser Part Number">604-APTR3216ZGCK</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=604-APTR3216ZGCK</field>
+      </fields>
+      <libsource lib="Samac" part="APTR3216ZGCK" description="3.2x1.6 mm SMD Chip LED Lamp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DE89E8D</tstamp>
+    </comp>
+    <comp ref="LED2">
+      <value>APTR3216ZGCK</value>
+      <footprint>LEDC3216X125N</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/1/APTR3216ZGCK.pdf</datasheet>
+      <fields>
+        <field name="Description">3.2x1.6 mm SMD Chip LED Lamp</field>
+        <field name="Height">1.25</field>
+        <field name="Manufacturer_Name">Kingbright</field>
+        <field name="Manufacturer_Part_Number">APTR3216ZGCK</field>
+        <field name="Mouser Part Number">604-APTR3216ZGCK</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=604-APTR3216ZGCK</field>
+      </fields>
+      <libsource lib="Samac" part="APTR3216ZGCK" description="3.2x1.6 mm SMD Chip LED Lamp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DE938FD</tstamp>
+    </comp>
+    <comp ref="LED5">
+      <value>APTR3216ZGCK</value>
+      <footprint>LEDC3216X125N</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/1/APTR3216ZGCK.pdf</datasheet>
+      <fields>
+        <field name="Description">3.2x1.6 mm SMD Chip LED Lamp</field>
+        <field name="Height">1.25</field>
+        <field name="Manufacturer_Name">Kingbright</field>
+        <field name="Manufacturer_Part_Number">APTR3216ZGCK</field>
+        <field name="Mouser Part Number">604-APTR3216ZGCK</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=604-APTR3216ZGCK</field>
+      </fields>
+      <libsource lib="Samac" part="APTR3216ZGCK" description="3.2x1.6 mm SMD Chip LED Lamp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DE94CD9</tstamp>
+    </comp>
+    <comp ref="LED8">
+      <value>APTR3216ZGCK</value>
+      <footprint>LEDC3216X125N</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/1/APTR3216ZGCK.pdf</datasheet>
+      <fields>
+        <field name="Description">3.2x1.6 mm SMD Chip LED Lamp</field>
+        <field name="Height">1.25</field>
+        <field name="Manufacturer_Name">Kingbright</field>
+        <field name="Manufacturer_Part_Number">APTR3216ZGCK</field>
+        <field name="Mouser Part Number">604-APTR3216ZGCK</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=604-APTR3216ZGCK</field>
+      </fields>
+      <libsource lib="Samac" part="APTR3216ZGCK" description="3.2x1.6 mm SMD Chip LED Lamp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DE95AD4</tstamp>
+    </comp>
+    <comp ref="LED3">
+      <value>APTR3216ZGCK</value>
+      <footprint>LEDC3216X125N</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/1/APTR3216ZGCK.pdf</datasheet>
+      <fields>
+        <field name="Description">3.2x1.6 mm SMD Chip LED Lamp</field>
+        <field name="Height">1.25</field>
+        <field name="Manufacturer_Name">Kingbright</field>
+        <field name="Manufacturer_Part_Number">APTR3216ZGCK</field>
+        <field name="Mouser Part Number">604-APTR3216ZGCK</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=604-APTR3216ZGCK</field>
+      </fields>
+      <libsource lib="Samac" part="APTR3216ZGCK" description="3.2x1.6 mm SMD Chip LED Lamp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DE964E5</tstamp>
+    </comp>
+    <comp ref="LED6">
+      <value>APTR3216ZGCK</value>
+      <footprint>LEDC3216X125N</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/1/APTR3216ZGCK.pdf</datasheet>
+      <fields>
+        <field name="Description">3.2x1.6 mm SMD Chip LED Lamp</field>
+        <field name="Height">1.25</field>
+        <field name="Manufacturer_Name">Kingbright</field>
+        <field name="Manufacturer_Part_Number">APTR3216ZGCK</field>
+        <field name="Mouser Part Number">604-APTR3216ZGCK</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=604-APTR3216ZGCK</field>
+      </fields>
+      <libsource lib="Samac" part="APTR3216ZGCK" description="3.2x1.6 mm SMD Chip LED Lamp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DE975EE</tstamp>
+    </comp>
+    <comp ref="LED9">
+      <value>APTR3216ZGCK</value>
+      <footprint>LEDC3216X125N</footprint>
+      <datasheet>https://componentsearchengine.com/Datasheets/1/APTR3216ZGCK.pdf</datasheet>
+      <fields>
+        <field name="Description">3.2x1.6 mm SMD Chip LED Lamp</field>
+        <field name="Height">1.25</field>
+        <field name="Manufacturer_Name">Kingbright</field>
+        <field name="Manufacturer_Part_Number">APTR3216ZGCK</field>
+        <field name="Mouser Part Number">604-APTR3216ZGCK</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=604-APTR3216ZGCK</field>
+      </fields>
+      <libsource lib="Samac" part="APTR3216ZGCK" description="3.2x1.6 mm SMD Chip LED Lamp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DE984F6</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>Conn_01x11</value>
+      <footprint>Connector_PinHeader_1.00mm:PinHeader_1x11_P1.00mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x11" description="Generic connector, single row, 01x11, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DFDE2D7</tstamp>
+    </comp>
+    <comp ref="VFD-russ1">
+      <value>IV-11-russ</value>
+      <footprint>XMas:IV-11-russ</footprint>
+      <libsource lib="VFD" part="IV-11-russ" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5DDA0864</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector_Generic" part="Conn_01x11">
+      <description>Generic connector, single row, 01x11, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x11</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+        <pin num="10" name="Pin_10" type="passive"/>
+        <pin num="11" name="Pin_11" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Samac" part="APTR3216ZGCK">
+      <description>3.2x1.6 mm SMD Chip LED Lamp</description>
+      <docs>https://componentsearchengine.com/Datasheets/1/APTR3216ZGCK.pdf</docs>
+      <fields>
+        <field name="Reference">LED</field>
+        <field name="Value">APTR3216ZGCK</field>
+        <field name="Footprint">LEDC3216X125N</field>
+        <field name="Datasheet">https://componentsearchengine.com/Datasheets/1/APTR3216ZGCK.pdf</field>
+        <field name="Description">3.2x1.6 mm SMD Chip LED Lamp</field>
+        <field name="Height">1.25</field>
+        <field name="Mouser Part Number">604-APTR3216ZGCK</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=604-APTR3216ZGCK</field>
+        <field name="Manufacturer_Name">Kingbright</field>
+        <field name="Manufacturer_Part_Number">APTR3216ZGCK</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="unspc"/>
+        <pin num="2" name="A" type="unspc"/>
+      </pins>
+    </libpart>
+    <libpart lib="Samac" part="CAT16-111J4LF">
+      <description>Resistor Networks &amp; Arrays 110ohm 5% Concave 4resistors</description>
+      <docs>https://componentsearchengine.com/Datasheets/1/CAT16-111J4LF.pdf</docs>
+      <fields>
+        <field name="Reference">RN</field>
+        <field name="Value">CAT16-111J4LF</field>
+        <field name="Footprint">CAPCAV80P155X320X60-8L</field>
+        <field name="Datasheet">https://componentsearchengine.com/Datasheets/1/CAT16-111J4LF.pdf</field>
+        <field name="Description">Resistor Networks &amp; Arrays 110ohm 5% Concave 4resistors</field>
+        <field name="Height">0.6</field>
+        <field name="Mouser Part Number">652-CAT16-111J4LF</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=652-CAT16-111J4LF</field>
+        <field name="Manufacturer_Name">Bourns</field>
+        <field name="Manufacturer_Part_Number">CAT16-111J4LF</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+        <pin num="4" name="~" type="passive"/>
+        <pin num="5" name="~" type="passive"/>
+        <pin num="6" name="~" type="passive"/>
+        <pin num="7" name="~" type="passive"/>
+        <pin num="8" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Samac" part="MIC2981_82YN">
+      <description>Micrel MIC2981/82YN, General Purpose Driver CMOS, PMOS, TTL, 350 mA, 5  50V 18-Pin, PDIP</description>
+      <docs>https://componentsearchengine.com/Datasheets/1/MIC2981_82YN.pdf</docs>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">MIC2981_82YN</field>
+        <field name="Footprint">DIP773W53P254L2337H394Q18N</field>
+        <field name="Datasheet">https://componentsearchengine.com/Datasheets/1/MIC2981_82YN.pdf</field>
+        <field name="Description">Micrel MIC2981/82YN, General Purpose Driver CMOS, PMOS, TTL, 350 mA, 5  50V 18-Pin, PDIP</field>
+        <field name="Height">3.937</field>
+        <field name="Mouser Part Number">998-MIC2981/82YN</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=998-MIC2981%2F82YN</field>
+        <field name="Manufacturer_Name">Microchip</field>
+        <field name="Manufacturer_Part_Number">MIC2981/82YN</field>
+      </fields>
+      <pins>
+        <pin num="1" name="IN1" type="unspc"/>
+        <pin num="2" name="IN2" type="unspc"/>
+        <pin num="3" name="IN3" type="unspc"/>
+        <pin num="4" name="IN4" type="unspc"/>
+        <pin num="5" name="IN5" type="unspc"/>
+        <pin num="6" name="IN6" type="unspc"/>
+        <pin num="7" name="IN7" type="unspc"/>
+        <pin num="8" name="IN8" type="unspc"/>
+        <pin num="9" name="VS" type="unspc"/>
+        <pin num="10" name="GND" type="unspc"/>
+        <pin num="11" name="OUT8" type="unspc"/>
+        <pin num="12" name="OUT7" type="unspc"/>
+        <pin num="13" name="OUT6" type="unspc"/>
+        <pin num="14" name="OUT5" type="unspc"/>
+        <pin num="15" name="OUT4" type="unspc"/>
+        <pin num="16" name="OUT3" type="unspc"/>
+        <pin num="17" name="OUT2" type="unspc"/>
+        <pin num="18" name="OUT1" type="unspc"/>
+      </pins>
+    </libpart>
+    <libpart lib="Samac" part="SN74HC595D">
+      <description>8-BIT SHIFT REGISTERS WITH 3-STATE OUTPUT REGISTERS</description>
+      <docs>http://www.ti.com/lit/gpn/sn74hc595</docs>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">SN74HC595D</field>
+        <field name="Footprint">SOIC127P600X175-16N</field>
+        <field name="Datasheet">http://www.ti.com/lit/gpn/sn74hc595</field>
+        <field name="Description">8-BIT SHIFT REGISTERS WITH 3-STATE OUTPUT REGISTERS</field>
+        <field name="Height">1.75</field>
+        <field name="Mouser Part Number">595-SN74HC595D</field>
+        <field name="Mouser Price/Stock">https://www.mouser.com/Search/Refine.aspx?Keyword=595-SN74HC595D</field>
+        <field name="Manufacturer_Name">Texas Instruments</field>
+        <field name="Manufacturer_Part_Number">SN74HC595D</field>
+      </fields>
+      <pins>
+        <pin num="1" name="QB" type="unspc"/>
+        <pin num="2" name="QC" type="unspc"/>
+        <pin num="3" name="QD" type="unspc"/>
+        <pin num="4" name="QE" type="unspc"/>
+        <pin num="5" name="QF" type="unspc"/>
+        <pin num="6" name="QG" type="unspc"/>
+        <pin num="7" name="QH" type="unspc"/>
+        <pin num="8" name="GND" type="unspc"/>
+        <pin num="9" name="QH'" type="unspc"/>
+        <pin num="10" name="~SRCLR" type="unspc"/>
+        <pin num="11" name="SRCLK" type="unspc"/>
+        <pin num="12" name="RCLK" type="unspc"/>
+        <pin num="13" name="~OE" type="unspc"/>
+        <pin num="14" name="SER" type="unspc"/>
+        <pin num="15" name="QA" type="unspc"/>
+        <pin num="16" name="VCC" type="unspc"/>
+      </pins>
+    </libpart>
+    <libpart lib="VFD" part="IV-11-russ">
+      <fields>
+        <field name="Reference">VFD-russ</field>
+        <field name="Value">IV-11-russ</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Fil-" type="input"/>
+        <pin num="2" name="Grid" type="input"/>
+        <pin num="3" name="C" type="output"/>
+        <pin num="4" name="DP" type="output"/>
+        <pin num="5" name="B" type="output"/>
+        <pin num="6" name="A" type="output"/>
+        <pin num="7" name="G" type="output"/>
+        <pin num="8" name="F" type="output"/>
+        <pin num="9" name="E" type="output"/>
+        <pin num="10" name="D" type="output"/>
+        <pin num="11" name="Fil+" type="input"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector_Generic">
+      <uri>C:\Program Files\KiCad\share\kicad\library/Connector_Generic.lib</uri>
+    </library>
+    <library logical="Samac">
+      <uri>C:/SamacSys_PCB_Library/KiCad/SamacSys_Parts.lib</uri>
+    </library>
+    <library logical="VFD">
+      <uri>C:/Users/rhandorf/Documents/KiCAD/XMas/vfd.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(IC2-Pad9)">
+      <node ref="IC2" pin="9"/>
+      <node ref="IC3" pin="14"/>
+    </net>
+    <net code="2" name="Net-(RN1-Pad8)">
+      <node ref="RN1" pin="8"/>
+    </net>
+    <net code="3" name="Net-(RN1-Pad7)">
+      <node ref="RN1" pin="7"/>
+    </net>
+    <net code="4" name="Net-(LED1-Pad1)">
+      <node ref="LED1" pin="1"/>
+      <node ref="LED4" pin="2"/>
+    </net>
+    <net code="5" name="Net-(IC3-Pad7)">
+      <node ref="IC3" pin="7"/>
+      <node ref="IC4" pin="8"/>
+    </net>
+    <net code="6" name="Net-(LED3-Pad2)">
+      <node ref="LED3" pin="2"/>
+      <node ref="RN1" pin="2"/>
+    </net>
+    <net code="7" name="Net-(LED1-Pad2)">
+      <node ref="LED1" pin="2"/>
+      <node ref="RN1" pin="6"/>
+    </net>
+    <net code="8" name="Net-(LED2-Pad2)">
+      <node ref="LED2" pin="2"/>
+      <node ref="RN1" pin="4"/>
+    </net>
+    <net code="9" name="Net-(LED6-Pad1)">
+      <node ref="LED9" pin="2"/>
+      <node ref="LED6" pin="1"/>
+    </net>
+    <net code="10" name="Net-(LED3-Pad1)">
+      <node ref="LED6" pin="2"/>
+      <node ref="LED3" pin="1"/>
+    </net>
+    <net code="11" name="Net-(LED5-Pad1)">
+      <node ref="LED5" pin="1"/>
+      <node ref="LED8" pin="2"/>
+    </net>
+    <net code="12" name="Net-(LED2-Pad1)">
+      <node ref="LED5" pin="2"/>
+      <node ref="LED2" pin="1"/>
+    </net>
+    <net code="13" name="Net-(LED4-Pad1)">
+      <node ref="LED4" pin="1"/>
+      <node ref="LED7" pin="2"/>
+    </net>
+    <net code="14" name="Net-(IC3-Pad1)">
+      <node ref="IC3" pin="1"/>
+      <node ref="IC4" pin="2"/>
+    </net>
+    <net code="15" name="Net-(IC3-Pad15)">
+      <node ref="IC4" pin="1"/>
+      <node ref="IC3" pin="15"/>
+    </net>
+    <net code="16" name="Net-(IC3-Pad9)">
+      <node ref="IC3" pin="9"/>
+    </net>
+    <net code="17" name="Net-(IC3-Pad13)">
+      <node ref="IC3" pin="13"/>
+    </net>
+    <net code="18" name="Net-(IC3-Pad6)">
+      <node ref="IC4" pin="7"/>
+      <node ref="IC3" pin="6"/>
+    </net>
+    <net code="19" name="Net-(IC3-Pad5)">
+      <node ref="IC4" pin="6"/>
+      <node ref="IC3" pin="5"/>
+    </net>
+    <net code="20" name="Net-(IC3-Pad4)">
+      <node ref="IC4" pin="5"/>
+      <node ref="IC3" pin="4"/>
+    </net>
+    <net code="21" name="Net-(IC3-Pad3)">
+      <node ref="IC4" pin="4"/>
+      <node ref="IC3" pin="3"/>
+    </net>
+    <net code="22" name="Net-(IC3-Pad2)">
+      <node ref="IC4" pin="3"/>
+      <node ref="IC3" pin="2"/>
+    </net>
+    <net code="23" name="RCLK">
+      <node ref="J1" pin="3"/>
+      <node ref="IC3" pin="12"/>
+      <node ref="IC2" pin="12"/>
+    </net>
+    <net code="24" name="LED1">
+      <node ref="J1" pin="5"/>
+      <node ref="RN1" pin="5"/>
+    </net>
+    <net code="25" name="LED3">
+      <node ref="J1" pin="7"/>
+      <node ref="RN1" pin="1"/>
+    </net>
+    <net code="26" name="LED2">
+      <node ref="RN1" pin="3"/>
+      <node ref="J1" pin="6"/>
+    </net>
+    <net code="27" name="SER">
+      <node ref="J1" pin="4"/>
+      <node ref="IC2" pin="14"/>
+    </net>
+    <net code="28" name="SRCLK">
+      <node ref="J1" pin="2"/>
+      <node ref="IC2" pin="11"/>
+      <node ref="IC3" pin="11"/>
+    </net>
+    <net code="29" name="SRCLR">
+      <node ref="IC3" pin="10"/>
+      <node ref="J1" pin="1"/>
+      <node ref="IC2" pin="10"/>
+    </net>
+    <net code="30" name="Net-(IC1-Pad14)">
+      <node ref="VFD-russ1" pin="9"/>
+      <node ref="IC1" pin="14"/>
+    </net>
+    <net code="31" name="Net-(IC1-Pad13)">
+      <node ref="VFD-russ1" pin="8"/>
+      <node ref="IC1" pin="13"/>
+    </net>
+    <net code="32" name="Net-(IC1-Pad12)">
+      <node ref="IC1" pin="12"/>
+      <node ref="VFD-russ1" pin="7"/>
+    </net>
+    <net code="33" name="Net-(IC1-Pad17)">
+      <node ref="IC1" pin="17"/>
+      <node ref="VFD-russ1" pin="5"/>
+    </net>
+    <net code="34" name="GND">
+      <node ref="IC3" pin="8"/>
+      <node ref="IC2" pin="8"/>
+      <node ref="J1" pin="11"/>
+      <node ref="LED7" pin="1"/>
+      <node ref="IC1" pin="10"/>
+      <node ref="LED8" pin="1"/>
+      <node ref="IC4" pin="10"/>
+      <node ref="VFD-russ1" pin="1"/>
+      <node ref="VFD-russ2" pin="1"/>
+      <node ref="LED9" pin="1"/>
+    </net>
+    <net code="35" name="Net-(IC1-Pad16)">
+      <node ref="IC1" pin="16"/>
+      <node ref="VFD-russ1" pin="3"/>
+    </net>
+    <net code="36" name="VCC1.5">
+      <node ref="VFD-russ2" pin="11"/>
+      <node ref="J1" pin="8"/>
+      <node ref="VFD-russ1" pin="11"/>
+    </net>
+    <net code="37" name="Net-(IC1-Pad15)">
+      <node ref="IC1" pin="15"/>
+      <node ref="VFD-russ1" pin="10"/>
+    </net>
+    <net code="38" name="VCC5">
+      <node ref="IC3" pin="16"/>
+      <node ref="J1" pin="9"/>
+      <node ref="IC2" pin="16"/>
+    </net>
+    <net code="39" name="Net-(IC1-Pad8)">
+      <node ref="IC2" pin="7"/>
+      <node ref="IC1" pin="8"/>
+    </net>
+    <net code="40" name="Net-(IC1-Pad7)">
+      <node ref="IC2" pin="6"/>
+      <node ref="IC1" pin="7"/>
+    </net>
+    <net code="41" name="Net-(IC1-Pad6)">
+      <node ref="IC2" pin="5"/>
+      <node ref="IC1" pin="6"/>
+    </net>
+    <net code="42" name="Net-(IC1-Pad5)">
+      <node ref="IC2" pin="4"/>
+      <node ref="IC1" pin="5"/>
+    </net>
+    <net code="43" name="Net-(IC1-Pad4)">
+      <node ref="IC1" pin="4"/>
+      <node ref="IC2" pin="3"/>
+    </net>
+    <net code="44" name="Net-(IC1-Pad3)">
+      <node ref="IC1" pin="3"/>
+      <node ref="IC2" pin="2"/>
+    </net>
+    <net code="45" name="Net-(IC1-Pad2)">
+      <node ref="IC2" pin="1"/>
+      <node ref="IC1" pin="2"/>
+    </net>
+    <net code="46" name="Net-(IC1-Pad1)">
+      <node ref="IC2" pin="15"/>
+      <node ref="IC1" pin="1"/>
+    </net>
+    <net code="47" name="Net-(IC2-Pad13)">
+      <node ref="IC2" pin="13"/>
+    </net>
+    <net code="48" name="Net-(IC1-Pad11)">
+      <node ref="VFD-russ1" pin="4"/>
+      <node ref="IC1" pin="11"/>
+    </net>
+    <net code="49" name="Net-(IC1-Pad18)">
+      <node ref="VFD-russ1" pin="6"/>
+      <node ref="IC1" pin="18"/>
+    </net>
+    <net code="50" name="VCC24">
+      <node ref="VFD-russ2" pin="2"/>
+      <node ref="IC4" pin="9"/>
+      <node ref="J1" pin="10"/>
+      <node ref="VFD-russ1" pin="2"/>
+      <node ref="IC1" pin="9"/>
+    </net>
+    <net code="51" name="Net-(IC4-Pad14)">
+      <node ref="VFD-russ2" pin="9"/>
+      <node ref="IC4" pin="14"/>
+    </net>
+    <net code="52" name="Net-(IC4-Pad13)">
+      <node ref="IC4" pin="13"/>
+      <node ref="VFD-russ2" pin="8"/>
+    </net>
+    <net code="53" name="Net-(IC4-Pad12)">
+      <node ref="VFD-russ2" pin="7"/>
+      <node ref="IC4" pin="12"/>
+    </net>
+    <net code="54" name="Net-(IC4-Pad17)">
+      <node ref="VFD-russ2" pin="5"/>
+      <node ref="IC4" pin="17"/>
+    </net>
+    <net code="55" name="Net-(IC4-Pad11)">
+      <node ref="IC4" pin="11"/>
+      <node ref="VFD-russ2" pin="4"/>
+    </net>
+    <net code="56" name="Net-(IC4-Pad16)">
+      <node ref="IC4" pin="16"/>
+      <node ref="VFD-russ2" pin="3"/>
+    </net>
+    <net code="57" name="Net-(IC4-Pad15)">
+      <node ref="IC4" pin="15"/>
+      <node ref="VFD-russ2" pin="10"/>
+    </net>
+    <net code="58" name="Net-(IC4-Pad18)">
+      <node ref="VFD-russ2" pin="6"/>
+      <node ref="IC4" pin="18"/>
+    </net>
+  </nets>
+</export>

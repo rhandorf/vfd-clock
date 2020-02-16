@@ -1,0 +1,8 @@
+(sym_lib_table
+  (lib (name VFD)(type Legacy)(uri C:/Users/rhandorf/Documents/KiCAD/XMas/vfd.lib)(options "")(descr ""))
+  (lib (name Samac)(type Legacy)(uri C:/SamacSys_PCB_Library/KiCad/SamacSys_Parts.lib)(options "")(descr ""))
+  (lib (name Power)(type Legacy)(uri C:/Users/rhandorf/Documents/KiCAD/XMas/power.lib)(options "")(descr ""))
+  (lib (name Regulator)(type Legacy)(uri C:/Users/rhandorf/Documents/KiCAD/XMas/Regulator_Linear.lib)(options "")(descr "")(disabled))
+  (lib (name Wimos)(type Legacy)(uri C:/Users/rhandorf/Documents/KiCAD/XMas/wemos_mini.lib)(options "")(descr ""))
+  (lib (name xmas-rescue)(type Legacy)(uri ${KIPRJMOD}/xmas-rescue.lib)(options "")(descr ""))
+)
