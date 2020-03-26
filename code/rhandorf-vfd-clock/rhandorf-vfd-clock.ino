@@ -117,6 +117,8 @@ void setup() {
   strip.begin();           // INITIALIZE NeoPixel strip object (REQUIRED)
   strip.show();            // Turn OFF all pixels ASAP
   strip.setBrightness(25); // Set BRIGHTNESS to about 1/5 (max = 255)
+
+  chase();
 }
 
 void chase() {
@@ -214,7 +216,7 @@ void loop() {
   digitalWrite(loadPin, 0);
   shiftOut(dataPin, clockPin, LSBFIRST, 0b000000000000000000000000000000000000000000000000);
   digitalWrite(loadPin, 1);
-  
+
   chase();
   
   while (Seconds<60) {
@@ -227,11 +229,17 @@ void loop() {
     unsigned int pause = 1000;
 
     strip.setPixelColor(0, hsl(HColor, saturation, lightness));
+    strip.show();
     strip.setPixelColor(1, hsl(HColor, saturation, lightness));
+    strip.show();
     strip.setPixelColor(2, hsl(MColor, saturation, lightness));
+    strip.show();
     strip.setPixelColor(3, hsl(MColor, saturation, lightness));
+    strip.show();
     strip.setPixelColor(4, hsl(SColor, saturation, lightness));
+    strip.show();
     strip.setPixelColor(5, hsl(SColor, saturation, lightness));
+    strip.show();
 
     HColor = (HColor + 1) % 360;
     MColor = (MColor + 1) % 360;
