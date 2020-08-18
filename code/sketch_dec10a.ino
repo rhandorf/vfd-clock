@@ -68,7 +68,7 @@ const int dataPin = 14;  //D5 //Outputs the byte to transfer
 const int loadPin = 0;   //D3 //3 //Controls the internal transference of data in SN74HC595 internal registers
 const int clockPin = 4;  //D2 // 4//Generates the clock signal to control the transference of data
 
-byte digits[10] {
+byte digits[38] {
   0b11111100, //0
   0b01100000, //1
   0b11011010, //2
@@ -78,7 +78,35 @@ byte digits[10] {
   0b10111110, //6
   0b11100000, //7
   0b11111110, //8
-  0b11100110  //9
+  0b11100110, //9
+  0b11101110, //A
+  0b00111110, //B
+  0b10011100, //C
+  0b01111010, //D
+  0b10011110, //E
+  0b10001110, //F
+  0b10111100, //G 
+  0b01101110, //H
+  0b00001100, //I
+  0b01111000, //J
+  0b10101110, //K
+  0b00011100, //L
+  0b10101000, //M
+  0b00101010, //N
+  0b11111100, //O
+  0b11001110, //P
+  0b11100110, //Q
+  0b00001010, //R
+  0b10110110, //S
+  0b00011110, //T
+  0b01111100, //U
+  0b01110100, //V
+  0b01010100, //W
+  0b01101110, //X
+  0b01110110, //Y
+  0b11011010, //Z
+  0b00000001, //.
+  0b00000000  //NULL
 };
 
 void setup() {
@@ -111,8 +139,8 @@ void setup() {
     chase();
   }
 
-  WiFi.hostname("VFD-Clock");
-  wifiManager.setHostname("VFD-Clock");
+  WiFi.hostname("VFD-Clock2");
+  wifiManager.setHostname("VFD-Clock2");
   int i=0;
   wifiManager.autoConnect("VFD WiFi Manager");
   
@@ -238,14 +266,13 @@ void loop() {
   unsigned int b=0;
 
   if (client) { // if !available yet, we return to this client in next loop
-    char line[64];
+    char line[256];
     int l = client.readBytesUntil('\n', line, sizeof(line));
     line[l] = 0;
     client.find((char*) "\r\n\r\n");
     if (strncmp_P(line, PSTR("POST"), strlen("POST")) == 0) {
       l = client.readBytes(line, sizeof(line));
       line[l] = 0;
-
       // parse the parameters sent by the html form
       const char* delims = "="; //was =&
       strtok(line, delims);
@@ -261,35 +288,83 @@ void loop() {
       client.println();
       client.println(F("<html><body><h3>Applying configuration</h3><br>please wait...</body></html>"));
       client.stop();
-
-      utc=atoi(value);
-      utcOffsetInSeconds = 3600*utc;
-
-      //US DST CALC
-      if(month() == 11 && day() < 8 && day() < weekday()) {
-        dst=true;
+      int tube[5];
+      tube[0]=digits[37];
+      tube[1]=digits[37];
+      tube[2]=digits[37];
+      tube[3]=digits[37];
+      tube[4]=digits[37];
+      tube[5]=digits[37];
+      digitalWrite(loadPin, 0);
+      for (int j=0; j<6; j++) {
+        shiftOut(dataPin, clockPin, LSBFIRST, digits[37]);
       }
-      if(month() == 11 && day() < 8 && weekday() == 1 && hour() < 1) {
-        dst=true;
-      }
+      digitalWrite(loadPin, 1);
+      delay(300);
+      if (strncmp_P(line, PSTR("msg"), strlen("msg")) == 0) {
+        for (int i=0; i<strlen(value); i++) {
+          if (int(toupper(value[i])) >= 48 && int(toupper(value[i])) <=57) {
+            tube[0] = digits[int(toupper(value[i]))-48];
+          } else if (int(toupper(value[i])) >= 65 && int(toupper(value[i])) <=90) {
+            tube[0] = digits[int(toupper(value[i]))-55];
+          } else if (int(toupper(value[i])) >= 32) {
+            tube[0] = digits[37];
+          } else {
+            tube[0] = digits[36];
+          }
+          digitalWrite(loadPin, 0);
+          for (int j=0; j<6; j++) {
+            shiftOut(dataPin, clockPin, LSBFIRST, tube[j]);
+          }
+          digitalWrite(loadPin, 1);
+          delay(200);
+          for (int j=5; j>0; j--) {
+            tube[j]=tube[j-1];
+          }
+        }
+        for (int i=0; i<6; i++) {
+          tube[0] = digits[37];
+          digitalWrite(loadPin, 0);
+          for (int j=0; j<6; j++) {
+            shiftOut(dataPin, clockPin, LSBFIRST, tube[j]);
+          }
+          digitalWrite(loadPin, 1);
+          delay(250);
+          for (int j=5; j>0; j--) {
+            tube[j]=tube[j-1];
+          }
 
-      if(month() < 11 && month() > 3) dst = true;
+        }
+      } else {
+        utc=atoi(value);
+        utcOffsetInSeconds = 3600*utc;
+
+        //US DST CALC
+        if(month() == 11 && day() < 8 && day() < weekday()) {
+          dst=true;
+        }
+        if(month() == 11 && day() < 8 && weekday() == 1 && hour() < 1) {
+          dst=true;
+        }
+
+        if(month() < 11 && month() > 3) dst = true;
  
-      if(month() == 3 && day() > 7 && day() >= (weekday() + 7)) {
-        if(!(weekday() == 1 && hour() < 2)) dst = true;
-      }
+        if(month() == 3 && day() > 7 && day() >= (weekday() + 7)) {
+          if(!(weekday() == 1 && hour() < 2)) dst = true;
+        }
  
-      if(dst) utcOffsetInSeconds += 3600UL;
+        if(dst) utcOffsetInSeconds += 3600UL;
       
-      timeClient.update();
-      timeClient.setTimeOffset(utcOffsetInSeconds);
-      setTime(timeClient.getEpochTime());
-      EEPROM.begin(512);
-      EEPROM.put(0, utc);
-      //EEPROM.update(0, utc);
-      //EEPROM.commit();
-      EEPROM.end();
-      //setTime(timeClient.getEpochTime()+utcOffsetInSeconds);
+        timeClient.update();
+        timeClient.setTimeOffset(utcOffsetInSeconds);
+        setTime(timeClient.getEpochTime());
+        EEPROM.begin(512);
+        EEPROM.put(0, utc);
+        //EEPROM.update(0, utc);
+        //EEPROM.commit();
+        EEPROM.end();
+        //setTime(timeClient.getEpochTime()+utcOffsetInSeconds);
+      }
     } else {
       client.println();
       client.print(data_header_html);  
