@@ -110,6 +110,7 @@ byte digits[38] {
 };
 
 void setup() {
+  delay(10000);
   Serial.begin(115200);
   EEPROM.begin(512);
   //utc = int(EEPROM.read(0));
@@ -141,6 +142,7 @@ void setup() {
 
   WiFi.hostname("VFD-Clock2");
   wifiManager.setHostname("VFD-Clock2");
+  wifiManager.setConnectTimeout(15);
   int i=0;
   wifiManager.autoConnect("VFD WiFi Manager");
   
